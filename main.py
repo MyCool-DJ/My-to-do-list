@@ -1,22 +1,18 @@
-import os, time
-
-myAgenda = []
-
 def printList():
-	print()
-	for item in myAgenda:
-		print(item)
-	print()
+  print() 
+  for item in myPartyList:
+    print(item)
+  print() 
 
 while True:
-	menu = input("add or remove item? ")
-	if menu == "add":
-		item = input("What's next on the Agenda? ")
-		myAgenda.append(item)
-	elif menu == "remove":
-		item = input("What do you want to remove? ")
-		myAgenda.remove(item)
-	printList()
-
-sleep.time(1.5)
-os.system("clear")
+  menu = input("add or remove?: )
+  if menu = "add":
+    item = input("Who should I add to the party list?: ")
+    myPartyList.add(item)
+  elif menu == "remove":
+    item = input("Who should I remove from the party list?: ")
+    if item in myPartyList:
+      myPartyList.remove(list)
+    else:
+      print("{item} was not in the list)
+  printList()
