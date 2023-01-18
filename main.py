@@ -1,3 +1,5 @@
+myPartyList = ["eat","sleep","rave","repeat"]
+
 def printList():
   print() 
   for item in myPartyList:
@@ -5,14 +7,16 @@ def printList():
   print() 
 
 while True:
-  menu = input("add or remove?: )
-  if menu = "add":
+  menu = input("add or remove?: ")
+  if menu == "add":
     item = input("Who should I add to the party list?: ")
-    myPartyList.add(item)
+    myPartyList.append(item)
   elif menu == "remove":
     item = input("Who should I remove from the party list?: ")
     if item in myPartyList:
-      myPartyList.remove(list)
+      myPartyList.remove(item)
     else:
-      print("{item} was not in the list)
+      print(f"{item} was not in the list")
   printList()
+
+print(myPartList)
